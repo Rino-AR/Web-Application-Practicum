@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Form Data Mahasiswa</h2>
+
+    <form onsubmit="tampilkanData(); return false;">
+        <table>
+            <tr>
+                <td><label for="nama">Nama</label></td>
+                <td><input type="text" id="nama" placeholder="Masukkan nama"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td><input type="text" id="nim" placeholder="Masukkan NIM"></td>
+            </tr>
+            <tr>
+                <td><label for="jk">Jenis Kelamin</label></td>
+                <td>
+                    <input type="radio" name="jk" value="Laki-laki" id="laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                    <input type="radio" name="jk" value="Perempuan" id="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="prodi">Prodi</label></td>
+                <td><input type="text" id="prodi" placeholder="Masukkan prodi"></td>
+            </tr>
+            <tr>
+                <td aria-colspan="2">
+                    <button type="submit">Simpan</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h3>Data Mahasiswa</h3>
+    <div id="dataMahasiswa"></div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,13 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+}
+input {
+    padding: 5px;
+}
+button {
+    padding: 8px 15px;
+}
